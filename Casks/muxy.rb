@@ -1,13 +1,13 @@
 cask "muxy" do
-  version "0.15.0"
+  version "0.16.0"
 
   on_arm do
-    sha256 "539e3f7b03b239abf9c2b9e37bb1e387dc641883db7212024a4b041e551ca2a2"
+    sha256 "0e319a7970be0b54b27265416c907fac56593e0f5bb14b8f4d4fe644a9d4ab34"
     url "https://github.com/muxy-app/muxy/releases/download/v#{version}/Muxy-#{version}-arm64.dmg"
   end
 
   on_intel do
-    sha256 "76f98583c1e8dfa3861d4d473277d5b6c735e430eea13d73256af93631f8ce57"
+    sha256 "4732072b51e3bf8d0a038f9611761256985be2d52283b30457a0c585392afd44"
     url "https://github.com/muxy-app/muxy/releases/download/v#{version}/Muxy-#{version}-x86_64.dmg"
   end
 
