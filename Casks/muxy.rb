@@ -1,18 +1,13 @@
 cask "muxy" do
-  version "1.6.1"
+  arch arm: "arm64", intel: "x86_64"
 
-  on_arm do
-    sha256 "bc0410e7a71bcdf2817e772559372805e07a8f05c166fda63438546357204b63"
-    url "https://github.com/muxy-app/muxy/releases/download/v#{version}/Muxy-#{version}-arm64.dmg"
-  end
+  version "2.0.0"
+  sha256 arm:   "4dbd35bd005fca589eaf02663050efcc49a024f4dba4d4245667d2bb45686a3d",
+         intel: "2744f6f08521a30485155e7dab77be16b8b967788fce770a916d9be7340d88d3"
 
-  on_intel do
-    sha256 "ac2443c090d29f7b320667d449b3943b3fc98e2484f588d9b4320b3110121b8c"
-    url "https://github.com/muxy-app/muxy/releases/download/v#{version}/Muxy-#{version}-x86_64.dmg"
-  end
-
+  url "https://github.com/muxy-app/muxy/releases/download/v#{version}/Muxy-#{version}-#{arch}.dmg"
   name "Muxy"
-  desc "Terminal multiplexer for macOS"
+  desc "Terminal multiplexer"
   homepage "https://github.com/muxy-app/muxy"
 
   livecheck do
@@ -20,9 +15,13 @@ cask "muxy" do
     strategy :github_latest
   end
 
+  auto_updates true
+  depends_on macos: :sonoma
+
   app "Muxy.app"
 
   zap trash: [
+    "~/Library/Application Support/Muxy 2",
     "~/Library/Application Support/Muxy",
     "~/Library/Caches/com.muxy.app",
     "~/Library/HTTPStorages/com.muxy.app",
