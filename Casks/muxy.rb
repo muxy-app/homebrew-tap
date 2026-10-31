@@ -1,9 +1,9 @@
 cask "muxy" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "2.2.0"
-  sha256 arm:   "7a94dc92924961033c0a7a96979d1af62d80c38b828faf3d46e00e17e0b559e3",
-         intel: "041f5db5048004ef1abeeb03e540c3b5e102340fe9eed11a986b4abbf67e2492"
+  version "2.3.0"
+  sha256 arm:   "123c4077797a0e7d2773d16cb9ee776c565d414981a213e733954b0cfc673d88",
+         intel: "be9e4097d0a9830e4ebf3a4a28bbc9d4cd37cc11795fbddde5fdd8e989cd3a86"
 
   url "https://github.com/muxy-app/muxy/releases/download/v#{version}/Muxy-#{version}-#{arch}.dmg"
   name "Muxy"
