@@ -1,30 +1,30 @@
 class MuxyCli < Formula
   desc "Terminal multiplexer: the muxy CLI, terminal UI, and server"
   homepage "https://github.com/muxy-app/muxy"
-  version "2.4.0"
+  version "2.5.0"
   license "Apache-2.0"
 
   on_macos do
     depends_on macos: :sonoma
 
     on_arm do
-      url "https://github.com/muxy-app/muxy/releases/download/v2.4.0/muxy-2.4.0-macos-arm64.zip"
-      sha256 "a3fe5600116ba04f03feb1aaec4f8926a531c8cfccd7ec612123cfb28157d694"
+      url "https://github.com/muxy-app/muxy/releases/download/v2.5.0/muxy-2.5.0-macos-arm64.zip"
+      sha256 "b41a8d2e597c6f95c3665f3c5241dd6fdb3d09c68b5f58de1e519c4da2e1dd56"
     end
     on_intel do
-      url "https://github.com/muxy-app/muxy/releases/download/v2.4.0/muxy-2.4.0-macos-x86_64.zip"
-      sha256 "4c465ef38a83aca8c3c4f1964c14a87f276cd78978f1e2653ef3af723165ba66"
+      url "https://github.com/muxy-app/muxy/releases/download/v2.5.0/muxy-2.5.0-macos-x86_64.zip"
+      sha256 "3f3cc7e7e050bb01016f659feb15c356dd2dc5dde00af26623a3006d2e5b19b9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/muxy-app/muxy/releases/download/v2.4.0/muxy-2.4.0-linux-arm64.tar.gz"
-      sha256 "44f4e37fb813ab0aba15065d5aa134baa57bd6a9604818e411479a0200d4d7f9"
+      url "https://github.com/muxy-app/muxy/releases/download/v2.5.0/muxy-2.5.0-linux-arm64.tar.gz"
+      sha256 "ed9ef5d84469a168d16d8833375a3ff2d79f43080a4293014e1b19caa6175614"
     end
     on_intel do
-      url "https://github.com/muxy-app/muxy/releases/download/v2.4.0/muxy-2.4.0-linux-x86_64.tar.gz"
-      sha256 "db655b3f9f38e229dd4cb9027fc889b7ee9233c79779e62ddb0b904be83c850b"
+      url "https://github.com/muxy-app/muxy/releases/download/v2.5.0/muxy-2.5.0-linux-x86_64.tar.gz"
+      sha256 "2dc482c94bb4d7764e2589697502d4f8c8c08275a2b64bfa0418c3599cd8d0d2"
     end
   end
 
